@@ -1,0 +1,38 @@
+#banner
+{
+	background-color: $c-pink;
+	position: relative;
+	top: 0px;
+	width: 100%;
+
+	.g1, .g2, .g3, .g4
+	{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+	.g1
+	{
+		background-image: url('../img/bg1.jpg');
+		background-color: #e42e54;
+	}
+	.g2
+	{
+		background-image: url('../img/bg2.jpg');
+		background-color: #634586;
+	}
+	.g3
+	{
+		background-image: url('../img/bg3.jpg');
+		background-color: #dcd500;
+	}
+	.g4
+	{
+		background-image: url('../img/bg4.jpg');
+		background-color: #634586;
+	}
+}

@@ -1,0 +1,43 @@
+#footer
+{
+	background-color: $c-blue;
+	padding: 30px 0;
+
+	.address
+	{
+		color: $c-white;
+		font-size: 0.8em;
+		margin-bottom: 20px;
+	}
+
+	hr
+	{
+		border: 0;
+		height: 1px;
+		background-color: $c-lightblue;
+	}
+
+	.logo
+	{
+	    position: absolute;
+	    bottom: -25px;
+	    left: 0;
+
+	    a
+	    {
+	      display: block;
+	      width: 63px;
+	      height: 42px;
+	      background-image: url('../img/header_logo.png');
+	      font-size: 0;
+	    }
+	}
+
+	.copyright
+	{
+		position: absolute;
+		color: $c-white;
+		font-size: 0.65em;
+		right: 0;
+	}
+}
