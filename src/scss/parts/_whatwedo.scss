@@ -7,10 +7,11 @@
 	.title
 	{
 		display: inline-block;
-		background-image: url('../img/wwd_title.png');
-		width: 483px;
-		height: 41px;
-		font-size: 0;
+		color: $c-white;
+		font-size: 3.3em;
 		margin-bottom: 100px;
+		text-transform: uppercase;
+		line-height: 0.9em;
+		font-weight: 800;
 	}
 }

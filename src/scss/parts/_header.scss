@@ -72,9 +72,8 @@
 
   .logo
   {
-    position: absolute;
-    top: 25px;
-    left: 0;
+    float: left;
+    margin-top: 25px;
 
     a
     {
@@ -88,9 +87,8 @@
 
   .menu-icon
   {
-    position: absolute;
-    top: 30px;
-    right: 0;
+    float: right;
+    margin-top: 30px;
   }
 }
 
@@ -103,12 +101,15 @@
   right: 0;
   background-color: rgba(0,0,0,0.7);
   z-index: 15;
-  transition: all 200ms;
+  transition: all 500ms;
   opacity: 1;
+  overflow: hidden;
+
 
   &.hide
   {
       opacity: 0;
+      height: 0;
   }
 
   .wrapper

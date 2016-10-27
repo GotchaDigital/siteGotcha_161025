@@ -8,16 +8,137 @@
 
 	.container
 	{
-		padding: 80px 0;
+		padding-top: 80px;
+		padding-bottom: 80px;
 	}
 
 	.title
 	{
 		display: inline-block;
-		background-image: url('../img/contact_title.png');
-		width: 307px;
-		height: 93px;
-		font-size: 0;
+		color: $c-blue;
+		font-size: 3.3em;
 		margin-bottom: 100px;
+		text-transform: uppercase;
+		line-height: 0.9em;
+	}
+
+	.wrapper
+	{
+		&:after{
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		.data
+		{
+			float: left;
+			text-align: center;
+			font-size: 0.9em;
+			width: 100%;
+			margin-top: 40px;
+		}
+
+		.form
+		{
+			text-align: left;
+			float: right;
+			width: 100%;
+
+			.formtitle
+			{
+				text-transform: uppercase;
+				font-weight: 800;
+				font-size: 1.2em;
+			}
+
+			input
+			{
+				width: 49%;
+				border: none;
+				font-weight: 200;
+				font-size: 0.8em;
+				background-color: $c-lightgray;
+				color: #000;
+				box-sizing: border-box;
+				padding: 8px 12px;
+				margin-bottom: 10px;
+
+				&:first-child
+				{
+					float: left;
+					margin-right: 2%;
+				}
+			}
+
+			select
+			{
+				-webkit-appearance: none;
+				-moz-appearance:    none;
+				appearance:         none;
+				width: 49%;
+				border: none;
+				font-weight: 200;
+				font-size: 0.8em;
+				background-color: $c-lightgray;
+				color: #000;
+				box-sizing: border-box;
+				padding: 8px 12px;
+				margin-bottom: 10px;
+				border-radius: 0;
+				background-image: url('../img/contact_selectArrow.png');
+				background-position: center right;
+				background-repeat: no-repeat;
+			}
+
+			textarea
+			{
+				width: 100%;
+				color: #000;
+				box-sizing: border-box;
+				padding: 8px 12px;
+				font-weight: 200;
+				font-size: 0.8em;
+				background-color: $c-lightgray;
+				border: 0;
+				height: 80px;
+			}
+
+			button
+			{
+				padding: 8px 0;
+				color: $c-blue;
+				border: 0;
+				background-color: transparent;
+				text-transform: uppercase;
+				font-size: 0.8em;
+				font-weight: 700;
+				float: right;
+
+				&:hover
+				{
+					color: $c-pink;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 900px)
+{
+	#contact
+	{
+		.wrapper
+		{
+			.data
+			{
+				width: 30%;
+				text-align: left;
+				margin-top: 0;
+			}
+			.form
+			{
+				width: 65%;
+			}
+		}
 	}
 }
