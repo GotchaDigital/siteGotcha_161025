@@ -15,7 +15,7 @@ gulp.task( 'styles', function()
 gulp.task( 'scripts', function()
 {
 	gulp.src([
-		'src/js/banner.js'
+		'src/js/*.js'
 		])
 	.pipe( concat( 'index.js' ) )
 	.pipe( gulp.dest( 'assets/js' ) )

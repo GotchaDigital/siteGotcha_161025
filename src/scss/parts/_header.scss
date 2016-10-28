@@ -65,8 +65,8 @@
 #header
 {
   /*background-color: $c-pink;*/
-  position: absolute;
-  top: 0px;
+  position: fixed;
+  top: 30px;
   width: 100%;
   z-index: 20;
 
@@ -74,6 +74,13 @@
   {
     float: left;
     margin-top: 25px;
+    opacity: 1;
+    transition: opacity 500ms;
+
+    &.hide
+    {
+      opacity: 0;
+    }
 
     a
     {
@@ -166,7 +173,7 @@
     margin: 0;
     padding: 0;
 
-    li
+    li a
     {
       color: $c-white;
 
@@ -175,5 +182,23 @@
         color: $c-pink;
       }
     }
+  }
+}
+
+#float-menu
+{
+  width: 165px;
+  height: 73px;
+  background-image: url('../img/float.png');
+  position: fixed;
+  z-index: 10;
+  right: 156px;
+  top: 35px;
+  opacity: 1;
+  transition: opacity 250ms;
+
+  &.hide
+  {
+    opacity: 0;
   }
 }

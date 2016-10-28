@@ -12,4 +12,51 @@
 		line-height: 0.9em;
 		font-weight: 800;
 	}
+
+	ul
+	{
+		list-style: none;
+
+		&:after{
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		li
+		{
+			float: left;
+		}
+
+		a
+		{
+			display: inline-block;
+			width: 228px;
+			height: 129px;
+			background-image: url('../img/cli_logos.png');
+			cursor: default;
+
+			&:hover
+			{
+				background-image: url('../img/cli_logosColor.png');
+			}
+	 	}
+
+	 	.cli_01 { background-position: 0 0; }
+	 	.cli_02 { background-position: -228px 0; }
+	 	.cli_03 { background-position: -456px 0; }
+	 	.cli_04 { background-position: -684px 0; }
+	 	.cli_05 { background-position: 0 -129px; }
+	 	.cli_06 { background-position: -228px -129px; }
+	 	.cli_07 { background-position: -456px -129px; }
+	 	.cli_08 { background-position: -684px -129px; }
+	 	.cli_09 { background-position: 0 -258px; }
+	 	.cli_10 { background-position: -228px -258px; }
+	 	.cli_11 { background-position: -456px -258px; }
+	 	.cli_12 { background-position: -684px -258px; }
+	 	.cli_13 { background-position: 0 -387px; }
+	 	.cli_14 { background-position: -228px -387px; }
+	 	.cli_15 { background-position: -456px -387px; }
+	 	.cli_16 { background-position: -684px -387px; }
+	}
 }

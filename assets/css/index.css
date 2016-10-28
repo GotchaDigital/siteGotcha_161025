@@ -520,13 +520,17 @@ a {
 /* Icon Animation : End */
 #header {
   /*background-color: $c-pink;*/
-  position: absolute;
-  top: 0px;
+  position: fixed;
+  top: 30px;
   width: 100%;
   z-index: 20; }
   #header .logo {
     float: left;
-    margin-top: 25px; }
+    margin-top: 25px;
+    opacity: 1;
+    transition: opacity 500ms; }
+    #header .logo.hide {
+      opacity: 0; }
     #header .logo a {
       display: block;
       width: 63px;
@@ -584,10 +588,23 @@ a {
     list-style: none;
     margin: 0;
     padding: 0; }
-    #menu ul li {
+    #menu ul li a {
       color: #ffffff; }
-      #menu ul li:hover {
+      #menu ul li a:hover {
         color: #e42e54; }
+
+#float-menu {
+  width: 165px;
+  height: 73px;
+  background-image: url("../img/float.png");
+  position: fixed;
+  z-index: 10;
+  right: 156px;
+  top: 35px;
+  opacity: 1;
+  transition: opacity 250ms; }
+  #float-menu.hide {
+    opacity: 0; }
 
 #banner {
   background-color: #e42e54;
@@ -627,16 +644,24 @@ a {
 
 #wwd {
   background-color: #de2248;
-  padding: 80px 0;
+  padding: 80px 0 100px 0;
   margin-top: 100px; }
   #wwd .title {
     display: inline-block;
     color: #ffffff;
     font-size: 3.3em;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     text-transform: uppercase;
     line-height: 0.9em;
     font-weight: 800; }
+  #wwd .slogan {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 200;
+    margin-bottom: 50px;
+    font-size: 1.4em; }
+  #wwd .content {
+    color: #ffffff;
+    font-weight: 100; }
 
 #clients {
   padding: 80px; }
@@ -648,6 +673,54 @@ a {
     text-transform: uppercase;
     line-height: 0.9em;
     font-weight: 800; }
+  #clients ul {
+    list-style: none; }
+    #clients ul:after {
+      content: "";
+      display: table;
+      clear: both; }
+    #clients ul li {
+      float: left; }
+    #clients ul a {
+      display: inline-block;
+      width: 228px;
+      height: 129px;
+      background-image: url("../img/cli_logos.png");
+      cursor: default; }
+      #clients ul a:hover {
+        background-image: url("../img/cli_logosColor.png"); }
+    #clients ul .cli_01 {
+      background-position: 0 0; }
+    #clients ul .cli_02 {
+      background-position: -228px 0; }
+    #clients ul .cli_03 {
+      background-position: -456px 0; }
+    #clients ul .cli_04 {
+      background-position: -684px 0; }
+    #clients ul .cli_05 {
+      background-position: 0 -129px; }
+    #clients ul .cli_06 {
+      background-position: -228px -129px; }
+    #clients ul .cli_07 {
+      background-position: -456px -129px; }
+    #clients ul .cli_08 {
+      background-position: -684px -129px; }
+    #clients ul .cli_09 {
+      background-position: 0 -258px; }
+    #clients ul .cli_10 {
+      background-position: -228px -258px; }
+    #clients ul .cli_11 {
+      background-position: -456px -258px; }
+    #clients ul .cli_12 {
+      background-position: -684px -258px; }
+    #clients ul .cli_13 {
+      background-position: 0 -387px; }
+    #clients ul .cli_14 {
+      background-position: -228px -387px; }
+    #clients ul .cli_15 {
+      background-position: -456px -387px; }
+    #clients ul .cli_16 {
+      background-position: -684px -387px; }
 
 #contact .map iframe {
   pointer-events: none;
