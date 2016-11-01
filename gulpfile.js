@@ -15,8 +15,10 @@ gulp.task( 'styles', function()
 gulp.task( 'scripts', function()
 {
 	gulp.src([
+		'src/js/jquery-3.1.1.min.js',
+		'src/js/jquery.colorbox-min.js',
 		'src/js/*.js'
-		])
+	])
 	.pipe( concat( 'index.js' ) )
 	.pipe( gulp.dest( 'assets/js' ) )
 	.pipe( livereload() );
