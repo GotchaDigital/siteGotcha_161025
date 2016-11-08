@@ -16,6 +16,7 @@
 	ul
 	{
 		list-style: none;
+		text-align: center;
 
 		&:after{
 			content: "";
@@ -25,7 +26,7 @@
 
 		li
 		{
-			float: left;
+			display: inline-block;
 		}
 
 		a
@@ -33,12 +34,12 @@
 			display: inline-block;
 			width: 228px;
 			height: 129px;
-			background-image: url('../img/cli_logos.png');
+			background-image: url('../img/cli_logos.jpg');
 			cursor: default;
 
 			&:hover
 			{
-				background-image: url('../img/cli_logosColor.png');
+				background-image: url('../img/cli_logosColor.jpg');
 			}
 	 	}
 
@@ -58,5 +59,9 @@
 	 	.cli_14 { background-position: -228px -387px; }
 	 	.cli_15 { background-position: -456px -387px; }
 	 	.cli_16 { background-position: -684px -387px; }
+ 		.cli_17 { background-position: 0 -516px; }
+	 	.cli_18 { background-position: -228px -516px; }
+	 	.cli_19 { background-position: -456px -516px; }
+	 	.cli_20 { background-position: -684px -516px; }
 	}
 }
