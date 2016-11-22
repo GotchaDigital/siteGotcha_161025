@@ -9,7 +9,7 @@ class form
 
 	private $_host = 'localhost';
 	private $_user = 'root';
-	private $_pass = '';
+	private $_pass = '12345678';
 	private $_db   = 'gotcha_site';
 
 	private function _connect()
