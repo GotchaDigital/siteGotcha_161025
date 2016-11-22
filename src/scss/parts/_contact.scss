@@ -30,6 +30,22 @@
 			clear: both;
 		}
 
+		.success
+		{
+			text-align: center;
+			background-color: $c-lightgray;
+			padding: 40px 0;
+			display: none;
+
+			p
+			{
+				margin: 10px 0 0 0;
+				color: $c-blue;
+				font-weight: 300;
+				text-transform: uppercase;
+			}
+		}
+
 		.data
 		{
 			float: left;

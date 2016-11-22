@@ -15,31 +15,31 @@ gulp.task( 'styles', function()
 gulp.task( 'scripts', function()
 {
 	gulp.src([
-		'src/js/jquery-3.1.1.min.js',
-		'src/js/jquery.colorbox-min.js',
-		'src/js/*.js'
-	])
-	.pipe( concat( 'index.js' ) )
-	.pipe( gulp.dest( 'assets/js' ) )
-	.pipe( livereload() );
+			'src/js/jquery-3.1.1.min.js',
+			'src/js/jquery.colorbox-min.js',
+			'src/js/*.js'
+		])
+		.pipe( concat( 'index.js' ) )
+		.pipe( gulp.dest( 'assets/js' ) )
+		.pipe( livereload() );
 });
 
 gulp.task( 'html', function()
 {
 	gulp.src([
-		'src/html/header.html',
+			'src/html/header.html',
 
-		'src/html/body/banner.html',
-		'src/html/body/cases.html',
-		'src/html/body/whatwedo.html',
-		'src/html/body/clients.html',
-		'src/html/body/contact.html',
+			'src/html/body/banner.html',
+			'src/html/body/cases.html',
+			'src/html/body/whatwedo.html',
+			'src/html/body/clients.html',
+			'src/html/body/contact.html',
 
-		'src/html/footer.html'
-		])
-	.pipe( concat( 'index.html' ) )
-	.pipe( gulp.dest( '' ) )
-	.pipe( livereload() );
+			'src/html/footer.html'
+			])
+		.pipe( concat( 'index.html' ) )
+		.pipe( gulp.dest( '' ) )
+		.pipe( livereload() );
 });
 
 

@@ -129,4 +129,10 @@ a
 .row
 {
 	position: relative;
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }

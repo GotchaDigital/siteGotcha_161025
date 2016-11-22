@@ -452,6 +452,10 @@ a {
 
 .row {
   position: relative; }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 /* Icon Animation : Start */
 #nav-icon3 {
@@ -632,8 +636,114 @@ a {
     background-image: url("../img/bg4.jpg");
     background-color: #634586; }
 
+p {
+  margin-left: -55px; }
+
+@-webkit-keyframes ani-mouse {
+  0% {
+    opacity: 1;
+    top: 29%; }
+  15% {
+    opacity: 1;
+    top: 50%; }
+  50% {
+    opacity: 0;
+    top: 50%; }
+  100% {
+    opacity: 0;
+    top: 29%; } }
+
+@-moz-keyframes ani-mouse {
+  0% {
+    opacity: 1;
+    top: 29%; }
+  15% {
+    opacity: 1;
+    top: 50%; }
+  50% {
+    opacity: 0;
+    top: 50%; }
+  100% {
+    opacity: 0;
+    top: 29%; } }
+
+@keyframes ani-mouse {
+  0% {
+    opacity: 1;
+    top: 29%; }
+  15% {
+    opacity: 1;
+    top: 50%; }
+  50% {
+    opacity: 0;
+    top: 50%; }
+  100% {
+    opacity: 0;
+    top: 29%; } }
+
+.scroll-btn {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 999;
+  bottom: 20px; }
+
+.scroll-btn > * {
+  display: inline-block;
+  line-height: 18px;
+  font-size: 13px;
+  font-weight: normal;
+  color: #7f8c8d;
+  color: #ffffff;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 2px; }
+
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *.active {
+  color: #ffffff; }
+
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *:active,
+.scroll-btn > *.active {
+  opacity: 0.8;
+  filter: alpha(opacity=80); }
+
+.scroll-btn .mouse {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 55px;
+  margin: 0 auto 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 3px solid white;
+  border-radius: 23px; }
+
+.scroll-btn .mouse > * {
+  position: absolute;
+  display: block;
+  top: 29%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  margin: -4px 0 0 -4px;
+  background: white;
+  border-radius: 50%;
+  -webkit-animation: ani-mouse 2.5s linear infinite;
+  -moz-animation: ani-mouse 2.5s linear infinite;
+  animation: ani-mouse 2.5s linear infinite; }
+
 #cases {
   padding: 80px 0; }
+  #cases:after {
+    content: "";
+    display: table;
+    clear: both; }
   #cases .title {
     display: inline-block;
     color: #33d3fb;
@@ -641,14 +751,123 @@ a {
     margin-bottom: 100px;
     text-transform: uppercase;
     line-height: 0.9em; }
+  #cases .wrapper {
+    position: relative; }
+    #cases .wrapper .case {
+      width: 100%;
+      background-color: #33d3fb;
+      float: left;
+      position: relative; }
+      @media (min-width: 550px) {
+        #cases .wrapper .case {
+          width: 50%; } }
+      @media (min-width: 950px) {
+        #cases .wrapper .case {
+          width: 33.3333%; } }
+      #cases .wrapper .case .image {
+        background-color: #cccccc;
+        width: 100%;
+        padding-bottom: 75%;
+        background-position: center;
+        background-size: 100%; }
+      #cases .wrapper .case .title {
+        background-color: #ffffff;
+        width: 100%;
+        height: 70px;
+        box-sizing: border-box;
+        font-size: 1em;
+        margin: 0;
+        position: relative; }
+        #cases .wrapper .case .title .text {
+          color: #e42e54;
+          position: absolute;
+          font-weight: 800;
+          font-size: 1.1em;
+          margin: 33px 0 0 17px;
+          z-index: 10; }
+        #cases .wrapper .case .title .logo {
+          float: right;
+          display: block;
+          height: 100%;
+          width: 100%;
+          background-position: right;
+          background-repeat: no-repeat;
+          opacity: 0.4; }
+      #cases .wrapper .case:hover .title .logo {
+        opacity: 1; }
+      #cases .wrapper .case.joli .image {
+        background-image: url("../img/cases_06jl.jpg"); }
+      #cases .wrapper .case.joli .logo {
+        background-image: url("../img/cases_06jl_logo.jpg"); }
+      #cases .wrapper .case.h4p .image {
+        background-image: url("../img/cases_05h4p.jpg"); }
+      #cases .wrapper .case.h4p .logo {
+        background-image: url("../img/cases_05h4p_logo.jpg"); }
+      #cases .wrapper .case.ec .image {
+        background-image: url("../img/cases_04ec.jpg"); }
+      #cases .wrapper .case.ec .logo {
+        background-image: url("../img/cases_04ec_logo.jpg"); }
+      #cases .wrapper .case.cb .image {
+        background-image: url("../img/cases_03cb.jpg"); }
+      #cases .wrapper .case.cb .logo {
+        background-image: url("../img/cases_03cb_logo.jpg"); }
+      #cases .wrapper .case.ctl .image {
+        background-image: url("../img/cases_02cl.jpg"); }
+      #cases .wrapper .case.ctl .logo {
+        background-image: url("../img/cases_02cl_logo.jpg"); }
+      #cases .wrapper .case.br .image {
+        background-image: url("../img/cases_01br.jpg"); }
+      #cases .wrapper .case.br .logo {
+        background-image: url("../img/cases_01br_logo.jpg"); }
+      #cases .wrapper .case.oc .image {
+        background-image: url("../img/cases_08oc.jpg"); }
+      #cases .wrapper .case.oc .logo {
+        background-image: url("../img/cases_08oc_logo.jpg"); }
+      #cases .wrapper .case.zl .image {
+        background-image: url("../img/cases_12zl.jpg"); }
+      #cases .wrapper .case.zl .logo {
+        background-image: url("../img/cases_12zl_logo.jpg"); }
+      #cases .wrapper .case.vv .image {
+        background-image: url("../img/cases_09vv.jpg"); }
+      #cases .wrapper .case.vv .logo {
+        background-image: url("../img/cases_09vv_logo.jpg"); }
+      #cases .wrapper .case.vn .image {
+        background-image: url("../img/cases_10vn.jpg"); }
+      #cases .wrapper .case.vn .logo {
+        background-image: url("../img/cases_10vn_logo.jpg"); }
+      #cases .wrapper .case.mb .image {
+        background-image: url("../img/cases_07mb.jpg"); }
+      #cases .wrapper .case.mb .logo {
+        background-image: url("../img/cases_07mb_logo.jpg"); }
+      #cases .wrapper .case.vc .image {
+        background-image: url("../img/cases_11vc.jpg"); }
+      #cases .wrapper .case.vc .logo {
+        background-image: url("../img/cases_11vc_logo.jpg"); }
 
-#colorbox .cboxIframe {
-  width: 100%;
-  height: 100%; }
+#colorbox {
+  z-index: 100;
+  max-height: 90% !important;
+  max-width: 90%; }
+  #colorbox .cboxIframe {
+    width: 100%;
+    height: 100%; }
+  #colorbox button {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    border: none;
+    background-color: #e42e54;
+    color: #ffffff;
+    border-radius: 0;
+    padding: 10px 12px; }
 
 #cboxOverlay {
   background-color: #000;
-  opacity: 0.7 !important; }
+  opacity: 0.7 !important;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 99; }
 
 #wwd {
   background-color: #de2248;
@@ -672,7 +891,7 @@ a {
     font-weight: 100; }
 
 #clients {
-  padding: 80px; }
+  padding: 80px 0; }
   #clients .title {
     display: inline-block;
     color: #33d3fb;
@@ -682,21 +901,24 @@ a {
     line-height: 0.9em;
     font-weight: 800; }
   #clients ul {
-    list-style: none; }
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0; }
     #clients ul:after {
       content: "";
       display: table;
       clear: both; }
     #clients ul li {
-      float: left; }
+      display: inline-block; }
     #clients ul a {
       display: inline-block;
       width: 228px;
       height: 129px;
-      background-image: url("../img/cli_logos.png");
+      background-image: url("../img/cli_logos.jpg");
       cursor: default; }
       #clients ul a:hover {
-        background-image: url("../img/cli_logosColor.png"); }
+        background-image: url("../img/cli_logosColor.jpg"); }
     #clients ul .cli_01 {
       background-position: 0 0; }
     #clients ul .cli_02 {
@@ -729,6 +951,14 @@ a {
       background-position: -456px -387px; }
     #clients ul .cli_16 {
       background-position: -684px -387px; }
+    #clients ul .cli_17 {
+      background-position: 0 -516px; }
+    #clients ul .cli_18 {
+      background-position: -228px -516px; }
+    #clients ul .cli_19 {
+      background-position: -456px -516px; }
+    #clients ul .cli_20 {
+      background-position: -684px -516px; }
 
 #contact .map iframe {
   pointer-events: none;
@@ -750,6 +980,17 @@ a {
   content: "";
   display: table;
   clear: both; }
+
+#contact .wrapper .success {
+  text-align: center;
+  background-color: #efefef;
+  padding: 40px 0;
+  display: none; }
+  #contact .wrapper .success p {
+    margin: 10px 0 0 0;
+    color: #33d3fb;
+    font-weight: 300;
+    text-transform: uppercase; }
 
 #contact .wrapper .data {
   float: left;
