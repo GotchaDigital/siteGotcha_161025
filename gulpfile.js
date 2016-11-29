@@ -1,13 +1,16 @@
 var gulp = require('gulp');
 
 var sass = require('gulp-sass');
+var cleanCSS = require('gulp-clean-css');
 var concat = require('gulp-concat');
+var minify = require('gulp-minify');
 var livereload = require('gulp-livereload');
 
 gulp.task( 'styles', function()
 {
 	gulp.src( 'src/scss/index.scss' )
 		.pipe( sass() )
+		.pipe( cleanCSS() )
 		.pipe( gulp.dest( 'assets/css' ) )
 		.pipe( livereload() );
 });
@@ -20,6 +23,7 @@ gulp.task( 'scripts', function()
 			'src/js/*.js'
 		])
 		.pipe( concat( 'index.js' ) )
+		.pipe( minify() )
 		.pipe( gulp.dest( 'assets/js' ) )
 		.pipe( livereload() );
 });
