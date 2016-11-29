@@ -70,6 +70,7 @@ $c-pink: #e42e54;
 $c-wpink: #de2248;
 $c-lightblue: #71e0fc;
 $c-blue: #33d3fb;
+$c-darkBlue: #019CBD;
 $c-yellow: #dcd500;
 $c-lightgray: #efefef;
 
@@ -81,12 +82,20 @@ $c-lightgray: #efefef;
 	-o-transform: $value;
 	transform: $value;
 }
+
 @mixin transition ($value)
 {
 	-webkit-transition: $value;
 	-moz-transition: $value;
 	-o-transition: $value;
 	transition: $value;
+}
+
+@mixin border-radius ($value)
+{
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    border-radius: 32px;
 }
 
 /* Classes padrões */

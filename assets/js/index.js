@@ -97,7 +97,7 @@ $(function()
 
 		// controla a posição do menu
 		var rt = ( $(window).width() - ( $('#header .menu-icon').offset().left + $('#header .menu-icon').outerWidth() ) );
-		$('#float-menu').css('right', rt - 30 );
+		$('#float-menu').css('right', rt - 16 );
 	});
 	$(window).resize();
 

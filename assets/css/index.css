@@ -598,15 +598,22 @@ a {
         color: #e42e54; }
 
 #float-menu {
-  width: 165px;
-  height: 73px;
-  background-image: url("../img/float.png");
+  width: 63px;
+  height: 62px;
+  background: #019CBD url("../img/floatBG.png") no-repeat center;
+  background-size: cover;
   position: fixed;
   z-index: 10;
   right: 156px;
-  top: 35px;
+  top: 41px;
   opacity: 1;
-  transition: opacity 250ms; }
+  transition: opacity 250ms;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  border-radius: 32px;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.37);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.37); }
   #float-menu.hide {
     opacity: 0; }
 
