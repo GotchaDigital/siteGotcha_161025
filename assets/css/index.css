@@ -621,7 +621,8 @@ a {
   background-color: #e42e54;
   position: relative;
   top: 0px;
-  width: 100%; }
+  width: 100%;
+  height: 500px; }
   #banner .g1, #banner .g2, #banner .g3, #banner .g4 {
     position: absolute;
     top: 0;
@@ -889,8 +890,8 @@ p {
     line-height: 0.9em;
     font-weight: 800; }
   #wwd .slogan {
-    color: rgba(255, 255, 255, 0.7);
-    font-weight: 200;
+    color: #f4bac5;
+    font-weight: 400;
     margin-bottom: 50px;
     font-size: 1.4em; }
   #wwd .content {
