@@ -3,29 +3,38 @@ body, html {
 
 .container {
   text-align: center;
-  width: 600px;
+  width: 100%;
   position: relative;
   margin: 0 auto; }
+  @media (min-width: 600px) {
+    .container {
+      width: 600px; } }
 
 .header {
   margin-top: 30px; }
   .header .title {
-    width: 600px;
+    width: 100%;
     background: url("../img/title.png") center;
     background-size: cover;
     position: relative;
     display: inline-block; }
+    @media (min-width: 600px) {
+      .header .title {
+        width: 600px; } }
     .header .title .inner {
       width: 100%;
       padding-bottom: 19.8%;
       content: ''; }
 
 .footer .title {
-  width: 600px;
+  width: 100%;
   background: url("../img/footer.png") center;
   background-size: cover;
   position: relative;
   display: inline-block; }
+  @media (min-width: 600px) {
+    .footer .title {
+      width: 600px; } }
   .footer .title .inner {
     width: 100%;
     padding-bottom: 7.5%;
@@ -33,7 +42,7 @@ body, html {
 
 .wheel .video {
   position: relative;
-  display: inline-block;
+  width: 450px;
   margin: 40px auto; }
   .wheel .video .mask {
     position: relative;

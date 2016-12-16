@@ -5,9 +5,14 @@ body, html
 .container
 {
 	text-align: center;
-	width: 600px;
+	width: 100%;
 	position: relative;
 	margin: 0 auto;
+
+	@media (min-width: 600px)
+	{
+		width: 600px;
+	}
 }
 
 .header
@@ -16,11 +21,16 @@ body, html
 
 	.title
 	{
-		width: 600px;
+		width: 100%;
 		background: url('../img/title.png') center;
 		background-size: cover;
 		position: relative;
 		display: inline-block;
+
+		@media (min-width: 600px)
+		{
+			width: 600px;
+		}
 
 		.inner
 		{
@@ -35,11 +45,16 @@ body, html
 {
 	.title
 	{
-		width: 600px;
+		width: 100%;
 		background: url('../img/footer.png') center;
 		background-size: cover;
 		position: relative;
 		display: inline-block;
+
+		@media (min-width: 600px)
+		{
+			width: 600px;
+		}
 
 		.inner
 		{
@@ -55,7 +70,7 @@ body, html
 	.video
 	{
 		position: relative;
-		display: inline-block;
+		width: 450px;
 		margin: 40px auto;
 
 		.mask
