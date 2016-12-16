@@ -1,0 +1,53 @@
+body, html {
+  background: url("../img/bg.png") center repeat-x; }
+
+.container {
+  text-align: center;
+  width: 600px;
+  position: relative;
+  margin: 0 auto; }
+
+.header {
+  margin-top: 30px; }
+  .header .title {
+    width: 600px;
+    background: url("../img/title.png") center;
+    background-size: cover;
+    position: relative;
+    display: inline-block; }
+    .header .title .inner {
+      width: 100%;
+      padding-bottom: 19.8%;
+      content: ''; }
+
+.footer .title {
+  width: 600px;
+  background: url("../img/footer.png") center;
+  background-size: cover;
+  position: relative;
+  display: inline-block; }
+  .footer .title .inner {
+    width: 100%;
+    padding-bottom: 7.5%;
+    content: ''; }
+
+.wheel .video {
+  position: relative;
+  display: inline-block;
+  margin: 40px auto; }
+  .wheel .video .mask {
+    position: relative;
+    background: url("../img/frame.png");
+    width: 450px;
+    height: 340px;
+    z-index: 3; }
+  .wheel .video .rotate {
+    position: absolute;
+    width: 300px;
+    z-index: 1;
+    top: 28px;
+    left: 76px; }
+    .wheel .video .rotate .gifplayer-wrapper, .wheel .video .rotate video, .wheel .video .rotate .gifplayer {
+      border-radius: 150px; }
+    .wheel .video .rotate .gifplayer {
+      width: 100%; }

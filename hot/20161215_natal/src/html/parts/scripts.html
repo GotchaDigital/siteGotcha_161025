@@ -1,0 +1,38 @@
+
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="assets/js/jquery.gifplayer.js"></script>
+<script>
+	$(document).ready( function(){
+		$('.gifplayer').gifplayer();
+		$('.gifplayer').gifplayer('play');
+	});
+
+	var status = 'on';
+	$('.mask').on(
+		'click',
+		function()
+		{
+			if(status == 'off')
+			{
+				status = 'on';
+				$('.gifplayer').gifplayer('play');
+			}
+			else
+			{
+				status = 'off';
+				$('.gifplayer').gifplayer('stop');
+			}
+		}
+	);
+		//$('.gifplayer').gifplayer('play');
+		//$('.gifplayer').gifplayer('stop');
+</script>
+
+<script type="text/javascript" src="assets/js/index.js"></script>
+<script>
+	document.write(
+		'<script src="http://' +
+		(location.host || 'localhost').split(':')[0] +
+		':35729/livereload.js?snipver=1"></' +
+		'script>')
+</script>
